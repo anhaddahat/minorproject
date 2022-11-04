@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Hadi
+ * //nothing
  */
 public class Text_Decryption extends javax.swing.JFrame {
 

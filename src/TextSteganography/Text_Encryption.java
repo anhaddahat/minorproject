@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Hadi
+ * //nothing
  */
 public class Text_Encryption extends javax.swing.JFrame {
 

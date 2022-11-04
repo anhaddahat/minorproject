@@ -9,7 +9,7 @@ import javax.swing.border.Border;
 
 public class LoginForm extends javax.swing.JFrame {
 
-   String MyAppPassword = "xxxx";
+   String MyAppPassword = "";
    
     public LoginForm() {
         initComponents();
@@ -245,14 +245,14 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordFocusLost
 
     private void jPasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordKeyTyped
-//        char num = evt.getKeyChar();
-//        if(num == KeyEvent.VK_ENTER)
+//       char num = evt.getKeyChar();
+//       if(num == KeyEvent.VK_ENTER)
 //        jLoginFormActionPerformed(null);
     }//GEN-LAST:event_jPasswordKeyTyped
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        if(jTextUserName.getText().equals("Hadi") && jPassword.getText().equals("123")){
+        if(jTextUserName.getText().equals("Anhad") && jPassword.getText().equals("1234")){
             SplashScreenFrame sc = new SplashScreenFrame();
             this.dispose();
             sc.setVisible(true);
@@ -267,7 +267,7 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-        JOptionPane.showMessageDialog(this, "The Password for user 'Hadi' is '123'");
+        JOptionPane.showMessageDialog(this, "The Password for user 'Anhad' is '1234'");
 
     }//GEN-LAST:event_jLabel7MouseClicked
 

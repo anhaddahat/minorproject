@@ -1,8 +1,7 @@
 package ImageSteganography;
 
 //EmbedMessage.java
-import Coding.SendEmail;
- import java.awt.image.*;
+import java.awt.image.*;
  import javax.swing.*;
  import java.awt.*;
  import java.awt.event.*;
@@ -10,11 +9,11 @@ import Coding.SendEmail;
 
 /**
  *
- * @author Hadi
+ * //nothing
  */ 
  public class Encryption extends JFrame implements ActionListener
  {
- JButton open = new JButton("Open"), embed = new JButton("Embed"), send = new JButton("Send"),
+ JButton open = new JButton("Open"), embed = new JButton("Embed"),
     save = new JButton("Save"), reset = new JButton("Reset");
  
  JTextArea message = new JTextArea(10,3);
@@ -24,31 +23,26 @@ import Coding.SendEmail;
     embeddedPane = new JScrollPane();
  
  public Encryption() {
-    super("Embed stegonographic message in image");
+    super("Embed steganographic message in image");
     assembleInterface();
     open.setBackground(Color.black);
     open.setForeground(Color.WHITE);
-    open.setFont(new Font("Monaco", Font.BOLD, 20));
+    open.setFont(new Font("Times new roman", Font.BOLD, 20));
     open.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     
     embed.setBackground(Color.black);
     embed.setForeground(Color.WHITE);
-    embed.setFont(new Font("Monaco", Font.BOLD, 20));
+    embed.setFont(new Font("Times new roman", Font.BOLD, 20));
     embed.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-    
-    send.setBackground(Color.black);
-    send.setForeground(Color.white);
-    send.setFont(new Font("Monaco", Font.BOLD, 20));
-    send.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     
     save.setBackground(Color.black);
     save.setForeground(Color.WHITE);
-    save.setFont(new Font("Monaco", Font.BOLD, 20));
+    save.setFont(new Font("Times new roman", Font.BOLD, 20));
     save.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     
     reset.setBackground(Color.black);
     reset.setForeground(Color.WHITE);
-    reset.setFont(new Font("Monaco", Font.BOLD, 20));
+    reset.setFont(new Font("Times new roman", Font.BOLD, 20));
     reset.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     
 //    this.setBounds(GraphicsEnvironment.getLocalGraphicsEnvironment().
@@ -65,19 +59,18 @@ import Coding.SendEmail;
     JPanel p = new JPanel(new FlowLayout());
     p.add(open);
     p.add(embed);
-    p.add(send);
     p.add(save);   
     p.add(reset);
     
     this.getContentPane().add(p, BorderLayout.SOUTH);
     open.addActionListener(this);
     embed.addActionListener(this);
-    send.addActionListener(this);
+
    save.addActionListener(this);   
     reset.addActionListener(this);
     open.setMnemonic('O');
     embed.setMnemonic('E');
-    send.setMnemonic('G');
+
     save.setMnemonic('S');
     reset.setMnemonic('R');
     
@@ -101,13 +94,13 @@ import Coding.SendEmail;
        openImage();
     else if(o == embed)
        embedMessage();
-    else if(o == send)
-    {
-        SendEmail Email = new SendEmail();
-        Email.setVisible(true);
-        Email.setLocationRelativeTo(null);
-        Email.pack();
-    }
+//    else if(o == send)
+//    {
+//        SendEmail Email = new SendEmail();
+//        Email.setVisible(true);
+//        Email.setLocationRelativeTo(null);
+//        Email.pack();
+//    }
     else if(o == save) 
        saveImage();
     else if(o == reset) 
